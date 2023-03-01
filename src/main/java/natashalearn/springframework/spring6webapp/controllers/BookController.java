@@ -16,6 +16,6 @@ public class BookController {
     @RequestMapping("/books")
     public String getBooks(Model model) {
         model.addAttribute("books", bookService.findAll());
-        return "books";
+        return "books"; // to refer to books.html in resources/template folder
     }
 }
